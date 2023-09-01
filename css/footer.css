@@ -1,0 +1,14 @@
+footer {
+  height: 100%;
+  margin-left: 100px;
+}
+
+footer > div {
+  height: 90px;
+}
+
+footer > div > img {
+  width: 40px;
+  height: 40px;
+  margin-right: 40px;
+}

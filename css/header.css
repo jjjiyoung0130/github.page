@@ -1,0 +1,108 @@
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --red: #f00;
+}
+
+.header {
+  width: 100%;
+  height: 120px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.inner_header {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* header-logo */
+.header_img_div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.h_logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header_img_div > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.h_a_text {
+  color: var(--white);
+  font-size: 24px;
+  margin-right: 24px;
+  letter-spacing: 2px;
+}
+
+#h_a_text_home {
+  color: var(--red);
+  margin-left: 80px;
+}
+
+.h_a_text_hover:hover {
+  color: var(--red);
+}
+
+/* header-btn-div */
+.header_btn_div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 30px;
+}
+
+input[id="icon"] {
+  display: none;
+}
+
+input[id="icon"] + label {
+  display: block;
+  width: 35px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+input[id="icon"] + label > span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--white);
+  position: absolute;
+}
+
+input[id="icon"] + label > span:nth-child(1) {
+  top: 0;
+}
+
+input[id="icon"] + label > span:nth-child(2) {
+  top: 43%;
+}
+
+input[id="icon"] + label > span:nth-child(3) {
+  bottom: 0;
+}
